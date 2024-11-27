@@ -1,0 +1,208 @@
+
+.fondomenu {
+  // margin: 16px;
+  // width: 200px;
+  border-right: none;
+  // border-radius: 20px;
+  // padding: 16px;
+  text-align: center;
+  align-items: center;
+
+
+}
+.fondodelmenu{
+  --background: rgb(160, 214, 131); /* Cambia este color al que prefieras */
+}
+
+.avatar {
+  margin-top: 16px;
+  width: 200px;
+  height: 200px;
+  // border-radius: 50%;
+  align-items: center;
+  // border-radius: 50%; /* Hace que la imagen sea circular */
+  object-fit: cover; /* Asegura que la imagen cubra completamente el contenedor sin distorsionarse */
+  // border: 5px solid rgb(254, 255, 159);
+  padding: 12px; /* Espacio entre la imagen y el borde */
+
+  // background: linear-gradient(135deg, rgb(112, 144, 93), rgb(75, 121, 78)); /* Fondo degradado */
+
+  background: linear-gradient(135deg, rgb(160, 214, 131), rgb(114, 191, 120)); /* Fondo degradado */
+  // border-radius: 2px; /* Bordes redondeados */
+  // box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Sombra */
+  // display: inline-block; /* Tamaño del contenedor ajustado a la imagen */
+}
+
+.name {
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: bold;
+  font-size: 60px;
+  margin-top: 8px;
+
+  font-weight: normal;
+  text-align: center;
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center;
+}
+
+.menu-button {
+  width: 100%;
+  background-color: rgb(160, 214, 131);
+  // display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  ion-item, ion-icon, ion-label {
+      margin-right: 8px;
+      color: black;
+      font-size: 30px;
+  }
+}
+.coloritem{
+  background: rgb(160, 214, 131);
+}
+.colormenus{
+  // background: rgb(160, 214, 131);
+  background: rgb(114, 191, 120);
+  color: black;
+}
+
+.titulo{
+  font-weight: bold;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 50px;
+  border: 10px;
+  position: relative;
+  text-align: start;
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  // font-weight: 900; /* Valores comunes: 400 (normal), 700 (negrita) */
+  // font-family: 'Courier New', Courier, monospace;
+}
+
+//Fondo de la plataforma
+.bigimage {
+  width: 100%;
+  min-height: 100vh; /* Asegura que el contenedor ocupe al menos el 100% del alto de la pantalla */
+  background:whitesmoke;
+  background-repeat: repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: scroll; /* Cambia a 'fixed' si quieres que el fondo esté fijo mientras el contenido se desplaza */
+  top: 0px;
+  left: 0px;
+}
+
+/* Estilos generales */
+.full-width-height {
+  width: 100%;
+  height: 800px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.centrar {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  // height: 100vh; /* O el tamaño del contenedor */
+}
+
+.titular {
+  background-color: rgb(160, 214, 131);
+  color: black;
+  width: 300px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  text-align: center;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 40px;
+}
+
+
+.button-group {
+  margin-top: 150px;
+  display: flex;
+  gap: 8px; /* Espacio entre botones */
+}
+
+
+@media (max-width: 768px) {
+  .card-title, .card-section, .boton-verp,.card-rating {
+    font-size: 18px; /* Reduce el tamaño de la fuente */
+    padding: 12px; /* Reduce el padding */
+    width: 170px; /* Ajusta el ancho */
+    height: 70px; /* Ajusta la altura para que se adapte mejor */
+  }
+}
+@media (max-width: 768px) {
+  .profile-stats {
+    min-width: 90px;
+  }
+}
+//////////////////////////////////////////////////////////////////////
+/// ////////////////////////////////////////
+///////////////////////////////////////////////////////////////
+///
+///
+
+.container{
+  font-weight: 900;
+  background-color: rgb(114, 191, 120);
+  color: #000000;
+  height: 350px;
+  width: 350px;
+    // background-color: rgb(160, 214, 131);
+    // border: #000000 2px solid;
+  }
+  .card {
+    margin-bottom: 1.5rem;
+    // background-color: rgb(114, 191, 120);
+  }
+  .boton{
+    color: rgb(160, 214, 131);
+    background-color: rgb(160, 214, 131);
+  }
+  .card-body {
+    background-color: rgb(114, 191, 120);
+    color: #000000; /* Color del texto */
+    font-weight: bold;
+  }
+  footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 1.5rem 0;
+  }
+
+  footer a {
+    color: #fff;
+    text-decoration: underline;
+  }
+
+  .btn-primary {
+    background-color: rgb(160, 214, 131);/* Color de fondo personalizado */
+    border-color: rgb(160, 214, 131);     /* Color del borde */
+    color: #000000;            /* Color del texto */
+  }
+
+  .btn-primary:hover {
+    background-color: rgb(254, 255, 159); /* Color al pasar el ratón */
+    border-color: rgb(254, 255, 159);
+  }
+
+  /* Estilo para el botón contorneado */
+  .btn-outline-secondary {
+    color: black;             /* Color del texto */
+    border-color: #333333;      /* Color del borde */
+  }
+
+  .btn-outline-secondary:hover {
+    background-color: rgb(254, 255, 159);  /* Fondo al pasar el ratón */
+    color: black;                /* Color del texto */
+    border-color: rgb(254, 255, 159);
+  }

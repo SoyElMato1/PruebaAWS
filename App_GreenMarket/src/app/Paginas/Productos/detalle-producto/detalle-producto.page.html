@@ -1,0 +1,30 @@
+
+<ion-content >
+  <div class="bigimage">
+    <ion-grid>
+      <ion-row>
+        <ion-col class="centrar">
+          <div class="titular" id="productos">
+            Detalle del producto
+          </div>
+        </ion-col>
+      </ion-row>
+      <ion-row class="ion-text-center">
+        <ion-col size="12" size-md="6" size-lg="4" *ngIf="producto">
+          <ion-card class="profile-card">
+            <div class="profile-image">
+              <img [src]="'http://localhost:8000' + producto.imagen_producto" alt="{{ producto.nombre_producto }}" class="profile-image" />
+            </div>
+            <ion-card-content class="profile-stats">
+              <div class="card-title">{{ producto.nombre_producto }}</div>
+              <div class="profile-details">
+                <p>{{ producto.descripcion }}</p>
+                <p class="precio">Precio: {{ producto.precio | currency }}</p>
+              </div>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+</ion-content>
